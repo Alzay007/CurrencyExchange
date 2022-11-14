@@ -1,0 +1,66 @@
+@import '../../../styles/_reset';
+@import '../../../styles/_vars.scss';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 120px;
+  padding: 0 20px;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 50px;
+    padding: 15px;
+    border-radius:  30px;
+
+    border: 1px solid rgb(11, 176, 55);
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+
+.logo-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-text {
+  color: $colorWhite;
+  font-size: 25px;
+  text-transform:uppercase;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: bold;
+  text-shadow:
+    1px 1px 0 $shadowColor,
+    1px -1px 0 $shadowColor,
+    -1px 1px 0 $shadowColor,
+    -1px -1px 0 $shadowColor;
+}
+
+.item-text {
+  color: $colorWhite;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: bold;
+}
+
+.item-icon {
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,57 @@
+<main class="converter" >
+  <div
+    class="converter__container"
+    [formGroup]="form"
+    (ngSubmit)="onReset()"
+  >
+    <div class="converter__item" formGroupName="currency">
+      <input
+        class="item-input"
+        [value]="inputFromValue"
+        (input)="onExchangeFrom($event)"
+        type="number"
+        placeholder="Value"
+      >
+      <select
+        (click)="exchange()"
+        formControlName="exchangeFrom"
+        class="item-select"
+      >
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+
+    <div class="converter__reverse" (click)="onChangeDirect()">
+      <img src="../../assets/change.png" alt="change" class="icon-reverse" >
+    </div>
+
+    <div class="converter__item" formGroupName="currency">
+      <input
+        type="number"
+        class="item-input"
+        [value]="inputToValue"
+        readonly
+        placeholder="0"
+      >
+      <select (click)="exchange()"
+        formControlName="exchangeTo"
+        class="item-select"
+      >
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+
+    <button
+      (click)="onReset()"
+      type="submit"
+      [disabled]="!form.dirty"
+      class="button-reset"
+    >
+      Reset
+    </button>
+  </div>
+</main>
