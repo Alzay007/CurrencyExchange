@@ -28,13 +28,13 @@ Currency Converter - an application made according to a test task.
 Well thought out interface and appearance.
 Clean code.
 
-# Technologies used:
-Angular
-TypeScript
-SCSS
-Syntax ES6
-REST API
-Webpack
+## Technologies used:
+- Angular
+- TypeScript
+- SCSS
+- Syntax ES6
+- REST API
+- Webpack
 
 Проект подключен к серверу и размещен в интернете с использованием GitHub Pages
 Установка
