@@ -35,6 +35,7 @@ Currency Converter - an application made according to a test task.
 - Syntax ES6
 - REST API
 - Webpack
+
 - The project is connected to the server and hosted on the Internet using GitHub Pages
 
 ## Установка
