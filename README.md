@@ -25,8 +25,8 @@ Currency Converter - an application made according to a test task.
 
 🔥 Will be a plus to:
 
-Well thought out interface and appearance.
-Clean code.
+- Well thought out interface and appearance.
+- Clean code.
 
 ## Technologies used:
 - Angular
