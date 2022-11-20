@@ -1,5 +1,6 @@
 @import '../../../styles/_reset';
 @import '../../../styles/_vars.scss';
+@import '../../../styles/mixin';
 
 .converter {
   box-sizing: border-box;
@@ -13,11 +14,18 @@
 
     background: linear-gradient(180deg, #394253 0%, #181C27 147.23%);
     border-radius: 20%;
+    box-shadow: 0 0.625rem 1.25rem  rgb(91 193 21 / 30%);
 
     margin: 0 auto;
     gap: 30px;
     width: 500px;
     height: 550px;
+
+    @include onMobile {
+      height: 300px;
+      width: 260px;
+      gap: 10px;
+    }
   }
 
   &__item {
@@ -25,6 +33,12 @@
     height: 76px;
     display: flex;
     align-items: center;
+
+    @include onMobile {
+      height: 50px;
+      width: 210px;
+      gap: 0;
+    }
   }
 
   &__reverse {
@@ -55,6 +69,13 @@
   font-family: Quicksand;
   font-weight: 700;
   font-size: 36px;
+
+  @include onMobile {
+    height: 50px;
+    width: 160px;
+
+    font-size: 26px;
+  }
 }
 
 .item-select {
@@ -75,6 +96,15 @@
   background: linear-gradient(47.94deg, #2C3341 19.6%, #313949 77.32%);
   border: 2px solid rgba(49, 57, 73, 0.5);
   box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262C37;
+
+  @include onMobile {
+    height: 50px;
+    width: 50px;
+
+    line-height: 10px;
+    padding: 14px 8px;
+    font-size: 11px;
+  }
 }
 
 input::-webkit-outer-spin-button,
@@ -105,6 +135,11 @@ input::-webkit-inner-spin-button {
     box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
     background-position: 0 0;
   }
+
+  @include onMobile {
+    padding: 8px 30px;
+    font-size: 18px;
+  }
 }
 
 .icon-reverse {
@@ -112,4 +147,10 @@ input::-webkit-inner-spin-button {
   height: 40px;
   transform: rotate(90deg);
   cursor: pointer;
+
+
+  @include onMobile {
+    width: 20px;
+    height: 20px;
+  }
 }

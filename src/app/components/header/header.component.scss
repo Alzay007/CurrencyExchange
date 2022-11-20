@@ -1,5 +1,6 @@
 @import '../../../styles/_reset';
 @import '../../../styles/_vars.scss';
+@import '../../../styles/mixin';
 
 .header {
   display: flex;
@@ -10,12 +11,56 @@
   height: 120px;
   padding: 0 20px;
 
+  @include onMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 10px;
+
+    height: 190px;
+    max-width: 639px;
+    gap: 20px;
+  }
+
   &__logo {
     display: flex;
     flex-direction: row;
     align-items: center;
 
     gap: 20px;
+
+    @include onMobile {
+      width: 260px;
+      height: 60px;
+      gap: 65px;
+    }
+
+    &-icon {
+      width: 100px;
+      height: 100px;
+
+      @include onMobile {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &-text {
+      color: $colorWhite;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-family: 'Cabin Condensed', sans-serif;
+      font-weight: bold;
+      text-shadow:
+        1px 1px 0 $shadowColor,
+        1px -1px 0 $shadowColor,
+        -1px 1px 0 $shadowColor,
+        -1px -1px 0 $shadowColor;
+
+        @include onMobile {
+          font-size: 20px;
+        }
+    }
   }
 
   &__list {
@@ -25,6 +70,15 @@
     border-radius:  30px;
 
     border: 1px solid rgb(11, 176, 55);
+
+    @include onMobile {
+      justify-content: space-around;
+      height: 65px;
+      width: 240px;
+
+      padding: 5px;
+      gap: 0;
+    }
   }
 
   &__list-item {
@@ -32,35 +86,30 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+
+    @include onMobile {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
-}
-
-
-.logo-icon {
-  width: 100px;
-  height: 100px;
-}
-
-.logo-text {
-  color: $colorWhite;
-  font-size: 25px;
-  text-transform:uppercase;
-  font-family: 'Cabin Condensed', sans-serif;
-  font-weight: bold;
-  text-shadow:
-    1px 1px 0 $shadowColor,
-    1px -1px 0 $shadowColor,
-    -1px 1px 0 $shadowColor,
-    -1px -1px 0 $shadowColor;
 }
 
 .item-text {
   color: $colorWhite;
   font-family: 'Cabin Condensed', sans-serif;
   font-weight: bold;
+
+  @include onMobile {
+    font-size: 11px;
+  }
 }
 
 .item-icon {
   width: 50px;
   height: 50px;
+
+  @include onMobile {
+    width: 30px;
+    height: 30px;
+  }
 }

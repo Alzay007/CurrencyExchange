@@ -10,7 +10,7 @@
         [value]="inputFromValue"
         (input)="onExchangeFrom($event)"
         type="number"
-        placeholder="Value"
+        placeholder="amount"
       >
       <select
         (click)="exchange()"
@@ -48,7 +48,6 @@
     <button
       (click)="onReset()"
       type="submit"
-      [disabled]="!form.dirty"
       class="button-reset"
     >
       Reset
