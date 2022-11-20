@@ -3,8 +3,11 @@
 @import '../../../styles/mixin';
 
 .converter {
-  box-sizing: border-box;
   padding-top: 20px;
+
+  @include onTablet {
+    padding: 20px 0;
+  }
 
   &__container {
     display: flex;
@@ -23,8 +26,13 @@
 
     @include onMobile {
       height: 300px;
-      width: 260px;
+      width: 270px;
       gap: 10px;
+    }
+
+    @include onTablet {
+      height: 450px;
+      width: 420px;
     }
   }
 
@@ -55,7 +63,6 @@
 }
 
 .item-input {
-  box-sizing: border-box;
   width: 249px;
   height: 76px;
   padding: 16px 26px;
@@ -81,8 +88,7 @@
 .item-select {
   width: 76px;
   height: 76px;
-  // color: rgba(255, 255, 255, 0.65);
-  color:rgba(230, 148, 6, 0.75);
+  color: rgba(230, 148, 6, 0.75);
 
   font-family: 'Quicksand';
   font-style: normal;
@@ -92,7 +98,6 @@
 
   padding: 28px 15px;
 
-  box-sizing: border-box;
   background: linear-gradient(47.94deg, #2C3341 19.6%, #313949 77.32%);
   border: 2px solid rgba(49, 57, 73, 0.5);
   box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262C37;

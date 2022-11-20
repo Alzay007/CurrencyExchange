@@ -22,6 +22,10 @@
     gap: 20px;
   }
 
+  @include onTablet {
+    gap: 20px;
+  }
+
   &__logo {
     display: flex;
     flex-direction: row;
@@ -74,10 +78,14 @@
     @include onMobile {
       justify-content: space-around;
       height: 65px;
-      width: 240px;
+      width: 220px;
 
       padding: 5px;
       gap: 0;
+    }
+
+    @include onTablet {
+      gap: 20px;
     }
   }
 
