@@ -41,7 +41,7 @@ Currency Converter - an application made according to a test task.
 
 ## 1. Клонируйте репозиторий командой:
 
-### ``
+### `git@github.com:Alzay007/CurrencyExchange.git`
 
 ## 2. Установите пакеты командой:
 
