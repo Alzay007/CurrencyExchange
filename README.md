@@ -46,7 +46,7 @@ The project is connected to the server and hosted on the Internet using GitHub P
 
 ### `npm i`
 
-## 3.Run command to start project:
+## 3. Run command to start project:
 
 ### `npm start`
 
