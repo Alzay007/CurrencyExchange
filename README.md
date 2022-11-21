@@ -16,10 +16,10 @@ Parts of application:
   1. The header should display the current exchange rate (USD, EUR) against the hryvnia (UAH).
      The current exchange rate should come from any public API.
   2. Component with conversion:
-    a. A separate input + select for the first currency, and a separate input + select for the second currency;
-    b. Input is given a number to indicate the number of units to convert;
-    c. Select must contain at least three currencies - UAH, USD, EUR;
-    d. Conversion must occur in both directions;
+    - a. A separate input + select for the first currency, and a separate input + select for the second currency;
+    - b. Input is given a number to indicate the number of units to convert;
+    - c. Select must contain at least three currencies - UAH, USD, EUR;
+    - d. Conversion must occur in both directions;
 
 🔥 Will be a plus to:
 
