@@ -1,6 +1,6 @@
 # CurrencyConverter
 
-This project was generated with [Angular]
+This project was generated with [Angular] and adapted for mobile devices and tablets.
 
 [DEMO LINK](https://Alzay007.github.io/CurrencyExchange/)
 
