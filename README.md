@@ -5,7 +5,7 @@ This project was generated with [Angular] and adapted for mobile devices and tab
 [DEMO LINK](https://Alzay007.github.io/CurrencyExchange/)
 
 # About project
-[Screenshot_1](https://user-images.githubusercontent.com/108741138/203065744-cf1b0757-755e-400c-96f6-9e4ed983e310.png)
+[Screenshot_1](https://prnt.sc/E3RX_mSRSQQ7)
 
 Currency Converter - an application made according to a test task.
 🎯 Purpose of the application: To give the user the ability to convert from one currency to another.
@@ -31,7 +31,6 @@ Parts of application:
 - TypeScript
 - SCSS
 - Syntax ES6!
-
 - REST API
 - Webpack
 
