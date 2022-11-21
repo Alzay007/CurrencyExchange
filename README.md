@@ -11,17 +11,14 @@ Currency Converter - an application made according to a test task.
 
 📝 Description:
 
-Приложение должно состоять из: 
-  1. В header-е необходимо отображать актуальный курс валют (USD, EUR) по отношению к гривне (UAH).
-     Актуальный курс валют должен приходить с любого публичного API.
-  2. Компонент с конвертацией
-    a. Для одной валюты должен быть свой input и select. 
-    b. отдельный input + select для первой валюты, и отдельный input + select для второй валюты
-    c. в input задается число, чтобы указать кол-во единиц для конвертирования
-    d. в select должно быть не менее трех валют - UAH, USD, EUR.
-    e. конвертация должна происходить в обоих направлениях 
-    при изменении значения в первой валюте, должно пересчитываться значение во второй, и наоборот
-    при изменении валюты в каждом select-е, конвертация обеих валют должна пересчитываться корректно
+Parts of application: 
+  1. The header should display the current exchange rate (USD, EUR) against the hryvnia (UAH).
+     The current exchange rate should come from any public API.
+  2. Component with conversion:
+    a. A separate input + select for the first currency, and a separate input + select for the second currency;
+    b. Input is given a number to indicate the number of units to convert;
+    c. Select must contain at least three currencies - UAH, USD, EUR;
+    d. Conversion must occur in both directions;
 
 🔥 Will be a plus to:
 
@@ -52,10 +49,10 @@ The project is connected to the server and hosted on the Internet using GitHub P
 
 ### `npm start`
 
-Запуск приложения в режиме разработки.\
-Откройте [http://localhost:4200](http://localhost:4200) чтобы увидеть результат в браузере.
+Runs the app in the development mode.\
+Open [http://localhost:4200](http://localhost:4200) to view it in the browser.
 
-Страница обновится автоматически при внесении изменений.
+The page will reload if you make edits.
 
 ## Что планируется улучшить
 
