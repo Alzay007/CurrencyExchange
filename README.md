@@ -36,17 +36,17 @@ Parts of application:
 
 The project is connected to the server and hosted on the Internet using GitHub Pages
 
-## Установка
+## How to set it up for work:
 
-## 1. Клонируйте репозиторий командой:
+## 1. Clone this project:
 
 ### `git@github.com:Alzay007/CurrencyExchange.git`
 
-## 2. Установите пакеты командой:
+## 2. Install the packages with the command:
 
 ### `npm i`
 
-## 3. Доступные скрипты:
+## 3.Run command to start project:
 
 ### `npm start`
 
